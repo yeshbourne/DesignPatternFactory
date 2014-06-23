@@ -17,7 +17,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    id aNexus5 = [DPFDeviceFactory assemble:Android];
+    [aNexus5 displayAssembledDevice];
+    
+    id aIOS5C = [DPFDeviceFactory assemble:IOS];
+    [aIOS5C displayAssembledDevice];
+    
+    id aNokiaLumnia950 = [DPFDeviceFactory assemble:Windows];
+    [aNokiaLumnia950 displayAssembledDevice];
+    
+    id aNokiaN85 = [DPFDeviceFactory assemble:Symbian];
+    [aNokiaN85 displayAssembledDevice];
 }
 
 - (void)didReceiveMemoryWarning

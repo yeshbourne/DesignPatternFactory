@@ -21,6 +21,9 @@
 		45A487C1195869AF00EF5CC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A487A3195869AF00EF5CC7 /* UIKit.framework */; };
 		45A487C9195869AF00EF5CC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45A487C7195869AF00EF5CC7 /* InfoPlist.strings */; };
 		45A487CB195869AF00EF5CC7 /* DesignPatternFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A487CA195869AF00EF5CC7 /* DesignPatternFactoryTests.m */; };
+		45A487D719586F2100EF5CC7 /* DPFIOSDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A487D619586F2100EF5CC7 /* DPFIOSDevice.m */; };
+		45A487DA19586FA800EF5CC7 /* DPFAndroidDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A487D919586FA800EF5CC7 /* DPFAndroidDevice.m */; };
+		45A487DD195875BD00EF5CC7 /* DPFDeviceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A487DC195875BD00EF5CC7 /* DPFDeviceFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,13 @@
 		45A487C6195869AF00EF5CC7 /* DesignPatternFactoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesignPatternFactoryTests-Info.plist"; sourceTree = "<group>"; };
 		45A487C8195869AF00EF5CC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45A487CA195869AF00EF5CC7 /* DesignPatternFactoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternFactoryTests.m; sourceTree = "<group>"; };
+		45A487D419586DCE00EF5CC7 /* DPFDeviceArchitectureProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFDeviceArchitectureProtocol.h; sourceTree = "<group>"; };
+		45A487D519586F2100EF5CC7 /* DPFIOSDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFIOSDevice.h; sourceTree = "<group>"; };
+		45A487D619586F2100EF5CC7 /* DPFIOSDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFIOSDevice.m; sourceTree = "<group>"; };
+		45A487D819586FA800EF5CC7 /* DPFAndroidDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFAndroidDevice.h; sourceTree = "<group>"; };
+		45A487D919586FA800EF5CC7 /* DPFAndroidDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFAndroidDevice.m; sourceTree = "<group>"; };
+		45A487DB195875BD00EF5CC7 /* DPFDeviceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFDeviceFactory.h; sourceTree = "<group>"; };
+		45A487DC195875BD00EF5CC7 /* DPFDeviceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFDeviceFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,13 @@
 		45A48793195869AF00EF5CC7 = {
 			isa = PBXGroup;
 			children = (
+				45A487DB195875BD00EF5CC7 /* DPFDeviceFactory.h */,
+				45A487DC195875BD00EF5CC7 /* DPFDeviceFactory.m */,
+				45A487D819586FA800EF5CC7 /* DPFAndroidDevice.h */,
+				45A487D919586FA800EF5CC7 /* DPFAndroidDevice.m */,
+				45A487D519586F2100EF5CC7 /* DPFIOSDevice.h */,
+				45A487D619586F2100EF5CC7 /* DPFIOSDevice.m */,
+				45A487D419586DCE00EF5CC7 /* DPFDeviceArchitectureProtocol.h */,
 				45A487A5195869AF00EF5CC7 /* DesignPatternFactory */,
 				45A487C4195869AF00EF5CC7 /* DesignPatternFactoryTests */,
 				45A4879E195869AF00EF5CC7 /* Frameworks */,
@@ -252,7 +269,10 @@
 			files = (
 				45A487B6195869AF00EF5CC7 /* DPFViewController.m in Sources */,
 				45A487AC195869AF00EF5CC7 /* main.m in Sources */,
+				45A487D719586F2100EF5CC7 /* DPFIOSDevice.m in Sources */,
+				45A487DD195875BD00EF5CC7 /* DPFDeviceFactory.m in Sources */,
 				45A487B0195869AF00EF5CC7 /* DPFAppDelegate.m in Sources */,
+				45A487DA19586FA800EF5CC7 /* DPFAndroidDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

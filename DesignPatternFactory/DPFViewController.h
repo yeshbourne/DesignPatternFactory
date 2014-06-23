@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPFDeviceFactory.h"
 
 @interface DPFViewController : UIViewController
 
